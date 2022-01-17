@@ -23,9 +23,14 @@ button {
   cursor: pointer;
 }
 
-.gallery-item {
+.gallery {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
 
-  margin-bottom: 20px;
+.gallery-item {
+  height: 300px;
+  padding: 5px;
+  list-style-type: none;
 }

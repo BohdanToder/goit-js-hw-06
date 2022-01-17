@@ -16,9 +16,9 @@ const images = [
 const galleryList = document.querySelector('.gallery');
 
 const galleryListItems = images
-  .map(image => `<li class="gallery-item"><img src="${image.url}" alt="${image.alt}" width="1300"</li>`)
+  .map(image => `<li class="gallery-item"><img src="${image.url}" alt="${image.alt}" width="400" height="100%"</li>`)
   .join("");
 
 galleryList.insertAdjacentHTML("beforeend", galleryListItems);
 
-//Додав мінімальні стилі в "common.css" по класу "gallery-item".
+//Додав мінімальні стилі в "common.css" по класам "gallery-item" та "gallery".
